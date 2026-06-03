@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registro – AM DEV Solutions</title>
+  <link rel="stylesheet" href="../../Estilos/base.css" />
+  <link rel="stylesheet" href="../../Estilos/autenticacion.css" />
+</head>
+<body class="auth-body">
+
+  <div class="auth-card">
+
+    <div class="auth-logo">
+      <img src="../../Recursos/logo.png" alt="AM DEV Solutions" />
+    </div>
+
+    <h2 class="auth-titulo">CREAR NUEVA CUENTA</h2>
+
+    <div class="auth-form">
+
+      <div class="campo">
+        <span class="campo-icono"></span>
+        <input type="text" id="inputNombre" placeholder="Nombre completo" autocomplete="off" />
+      </div>
+
+      <div class="campo">
+        <span class="campo-icono"></span>
+        <input type="text" id="inputApellidoPaterno" placeholder="Apellido paterno" autocomplete="off" />
+      </div>
+
+      <div class="campo">
+        <span class="campo-icono"></span>
+        <input type="text" id="inputApellidoMaterno" placeholder="Apellido materno" autocomplete="off" />
+      </div>
+
+      <div class="campo">
+        <span class="campo-icono"></span>
+        <input type="email" id="inputEmail" placeholder="Correo electronico" autocomplete="off" />
+      </div>
+
+      <div class="campo">
+        <span class="campo-icono"></span>
+        <input type="password" id="inputPassword" placeholder="Contraseña" autocomplete="off" />
+      </div>
+
+      <div id="mensajeError" class="mensaje-error" style="display:none;"></div>
+
+      <button class="btn-entrar" id="btnRegistrar">CREAR CUENTA</button>
+
+      <p class="auth-registro">¿Ya tienes cuenta?
+        <a href="login.html" class="link-registro">Inicia sesión aqui</a>
+      </p>
+
+    </div>
+
+  </div>
+
+  <script src="../../Scripts/Servicios/api.js"></script>
+  <script src="../../Scripts/Servicios/autenticacion.js"></script>
+  <script src="../../Scripts/Vistas/registro.js"></script>
+
+</body>
+</html>

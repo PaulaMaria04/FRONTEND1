@@ -1,0 +1,50 @@
+:root {
+  --bg-principal:     #111111;
+  --bg-sidebar:       #1a1a1a;
+  --bg-card:          #141414;
+  --bg-input:         #0d0d0d;
+  --bg-mensaje-user:  #2b2b2b;
+  --bg-mensaje-ia:    #222222;
+  --borde:            #393939;
+  --borde-card:       #343434;
+  --borde-btn:        #474747;
+  --texto-principal:  #ffffff;
+  --texto-secundario: #cfcfcf;
+  --texto-muted:      #888888;
+  --acento:           #238cff;
+  --acento-hover:     #1a7ae0;
+  --radio-btn:        30px;
+  --radio-card:       10px;
+  --radio-msg:        18px;
+  --radio-input:      18px;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: var(--bg-principal);
+  color: var(--texto-principal);
+  height: 100vh;
+  overflow: hidden;
+}
+
+a {
+  color: var(--acento);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.webkit-scrollbar {
+    width: 5px; 
+}
+.webkit-scrollbar-thumb { 
+    background: #444; border-radius: 3px;
+}

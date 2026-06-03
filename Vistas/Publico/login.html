@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iniciar Sesión – AM DEV Solutions</title>
+  <link rel="stylesheet" href="../../Estilos/base.css" />
+  <link rel="stylesheet" href="../../Estilos/autenticacion.css" />
+</head>
+<body class="auth-body">
+
+  <div class="auth-card">
+
+    <div class="auth-logo">
+      <img src="../../Recursos/logo.png" alt="AM DEV Solutions" />
+    </div>
+
+    <h2 class="auth-titulo">INICIAR SESION</h2>
+    <p class="auth-subtitulo">Introduce tus credenciales</p>
+
+    <div class="auth-form">
+
+      <div class="campo">
+        <span class="campo-icono"></span>
+        <input type="email" id="inputEmail" placeholder="Correo electronico" autocomplete="off" />
+      </div>
+
+      <div class="campo">
+        <span class="campo-icono"></span>
+        <input type="password" id="inputPassword" placeholder="Contraseña" autocomplete="off" />
+      </div>
+
+      <div class="auth-links">
+        <a href="#" class="link-olvide">¿Olvidaste tu contraseña?</a>
+      </div>
+
+      <div id="mensajeError" class="mensaje-error" style="display:none;"></div>
+
+      <button class="btn-entrar" id="btnEntrar">ENTRAR</button>
+
+      <p class="auth-registro">
+        ¿No tienes cuenta?
+        <a href="registro.html" class="link-registro">Registrate aqui</a>
+      </p>
+
+    </div>
+
+  </div>
+
+  <script src="../../Scripts/Servicios/api.js"></script>
+  <script src="../../Scripts/Servicios/autenticacion.js"></script>
+  <script src="../../Scripts/Vistas/login.js"></script>
+
+</body>
+</html>

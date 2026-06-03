@@ -1,0 +1,125 @@
+.auth-body {
+  background: var(--bg-principal);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.auth-card {
+  background: #1e1e1e;
+  border: 1px solid #2e2e2e;
+  border-radius: 14px;
+  padding: 40px 48px;
+  width: 100%;
+  max-width: 460px;
+  text-align: center;
+}
+
+.auth-logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.auth-logo img {
+  width: 200px;
+  object-fit: contain;
+}
+
+.auth-titulo {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 6px;
+}
+
+.auth-subtitulo {
+  font-size: 14px;
+  color: var(--texto-secundario);
+  margin-bottom: 28px;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.campo {
+  display: flex;
+  align-items: center;
+  background: #141414;
+  border: 1px solid #2e2e2e;
+  border-radius: 8px;
+  padding: 0 16px;
+  height: 52px;
+  transition: border-color 0.2s;
+}
+
+.campo:focus-within { border-color: var(--acento); }
+
+.campo-icono {
+  font-size: 18px;
+  margin-right: 12px;
+  opacity: 0.6;
+}
+
+.campo input {
+  flex: 1;
+  background: none;
+  border: none;
+  outline: none;
+  color: var(--texto-principal);
+  font-size: 15px;
+}
+
+.campo input::placeholder { color: var(--texto-muted); }
+
+.auth-links {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.link-olvide {
+  font-size: 13px;
+  color: var(--texto-muted);
+}
+
+.mensaje-error {
+  background: rgba(220, 50, 50, 0.12);
+  border: 1px solid rgba(220, 50, 50, 0.3);
+  border-radius: 8px;
+  color: #ff6b6b;
+  font-size: 13px;
+  padding: 10px 14px;
+  text-align: left;
+}
+
+.btn-entrar {
+  width: 100%;
+  height: 50px;
+  background: #2563eb;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  margin-top: 6px;
+  transition: background 0.2s;
+}
+
+.btn-entrar:hover { background: #1d55d4; }
+
+.auth-registro {
+  font-size: 14px;
+  color: var(--texto-secundario);
+}
+
+.link-registro {
+  color: var(--acento);
+  font-weight: 500;
+}

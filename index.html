@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AM DEV Solutions</title>
+  <link rel="stylesheet" href="Estilos/base.css" />
+  <link rel="stylesheet" href="Estilos/principal.css" />
+</head>
+<body>
+
+  <div class="app">
+    
+    <aside class="sidebar">
+
+      <div class="logo">
+        <img src="Recursos/logo.png" alt="AM DEV Solutions">
+      </div>
+
+      <div class="historial-card">
+        <div class="historial-icon">
+          <img src="Recursos/historial.png" alt="" onerror="this.style.display='none'">
+        </div>
+        <h3>INICIA SESIÓN PARA VER TU HISTORIAL</h3>
+        <p>Tus conversaciones se guardan de forma segura al registrarse</p>
+      </div>
+
+      <ul class="historial-lista" id="historialLista"></ul>
+
+    </aside>
+
+    <main class="main">
+
+      <header class="header">
+        <button class="btn-icon">⚙️</button>
+        <button class="btn-nuevo-chat" id="btnNuevoChat">Nuevo chat</button>
+        <button class="btn-login" onclick="window.location.href='Vistas/Publico/login.html'">
+          Iniciar sesión
+        </button>
+      </header>
+
+      <div class="chat-area" id="chatArea">
+        <div class="bienvenida" id="bienvenida">
+          <img src="Recursos/logo.png" alt="AM DEV Solutions" class="logo-centro" />
+        </div>
+      </div>
+
+      <div class="input-area">
+        <input
+          type="text"
+          id="inputMensaje"
+          placeholder="Pregunta a la IA"
+          autocomplete="off"
+        />
+        <button id="btnEnviar">➤</button>
+      </div>
+
+    </main>
+
+  </div>
+
+  <script src="Scripts/Servicios/api.js"></script>
+  <script src="Scripts/Servicios/chat.js"></script>
+  <script src="Scripts/Vistas/principal.js"></script>
+
+</body>
+</html>
